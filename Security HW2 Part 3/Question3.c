@@ -5,8 +5,8 @@ int main (int argc, const char* argv[])
 	int array[] = {0, 0, 0, 100};
 	int eax = 0;
 	int edx = 0;
-	int ecx = 0;
 	
+	// 
 	while (array[3] <= 999)
 	{
 		// index 2
@@ -40,10 +40,11 @@ int main (int argc, const char* argv[])
 		edx += eax;
 		
 		eax = edx;
-		printf("%d\n", eax);
+
+		// if the sum of the first 3 elements cubed equals the counter
 		if (eax == array[3])
 		{
-			printf("%d", array[3]);
+			printf("%d\n", array[3]);
 		}
 		array[3]++;
 	}
